@@ -73,7 +73,8 @@ class App extends Component {
             <Alert alert={this.state.alert} />
             <Switch>
               <Route
-                exactpath='/'
+                exact
+                path='/'
                 render={props => (
                   <Fragment>
                     <Search
