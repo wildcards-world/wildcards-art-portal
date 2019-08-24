@@ -11,10 +11,13 @@ const Navbar = ({ icon, title }) => {
       </h1>
       <ul>
         <li>
-          <Link to='/'>Home</Link>
+          <Link to='/'>Projects</Link>
         </li>
         <li>
-          <Link to='/about'>About</Link>
+          <Link to='/about'>Me</Link>
+        </li>
+        <li>
+          <Link to='/contact'>Contact</Link>
         </li>
       </ul>
     </nav>
@@ -22,8 +25,8 @@ const Navbar = ({ icon, title }) => {
 };
 
 Navbar.defaultProps = {
-  title: 'Github Finder',
-  icon: 'fab fa-github'
+  title: '  JonJon Clark',
+  icon: 'fa fa-user-o'
 };
 
 Navbar.propTypes = {
