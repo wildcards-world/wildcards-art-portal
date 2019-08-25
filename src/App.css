@@ -2,12 +2,19 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #dc3545;
+  --primary-color: #56c1d496;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
+
+/* particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+} */
 
 * {
   box-sizing: border-box;
@@ -363,7 +370,7 @@ table th {
 }
 
 .navbar a {
-  color: #fff;
+  color: rgb(229, 237, 238);
   padding: 0.45rem;
   margin: 0 0.25rem;
 }

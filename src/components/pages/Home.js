@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Projects from '../project/Projects.js';
 
 const Home = () => (
   <Fragment>
