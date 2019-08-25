@@ -1,20 +1,7 @@
-import React, { Fragment, useEffect, useContext } from 'react';
-import Spinner from '../layout/Spinner';
-import Repos from '../repos/Repos';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import PortfolioContext from '../../context/portfolio/portfolioContext';
 
-const Project = ({ match }) => {
-  const portfolioContext = useContext(PortfolioContext);
-
-  const { getUser, loading, user, repos, getUserRepos } = portfolioContext;
-
-  useEffect(() => {
-    getUser(match.params.login);
-    getUserRepos(match.params.login);
-    // eslint-disable-next-line
-  }, []);
-
+const Project = ({ params }) => {
   const {
     name,
     company,
@@ -29,9 +16,7 @@ const Project = ({ match }) => {
     public_repos,
     public_gists,
     hireable
-  } = user;
-
-  if (loading) return <Spinner />;
+  } = params;
 
   return (
     <Fragment>
@@ -97,7 +82,6 @@ const Project = ({ match }) => {
         <div className='badge badge-light'>Public Repos: {public_repos}</div>
         <div className='badge badge-dark'>Public Gists: {public_gists}</div>
       </div>
-      <Repos repos={repos} />
     </Fragment>
   );
 };
