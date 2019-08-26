@@ -15,7 +15,7 @@ export default () => (
       params={{
         particles: {
           number: {
-            value: 15,
+            value: 12,
             density: {
               enable: true,
               value_area: 800
@@ -113,7 +113,7 @@ export default () => (
               duration: 0.4
             },
             push: {
-              particles_nb: 4
+              particles_nb: 1
             },
             remove: {
               particles_nb: 2

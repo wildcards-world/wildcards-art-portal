@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
-const Project = ({ params }) => {
+const Project = ({ match }) => {
   const {
     name,
     company,
@@ -16,7 +16,7 @@ const Project = ({ params }) => {
     public_repos,
     public_gists,
     hireable
-  } = params;
+  } = match.params;
 
   return (
     <Fragment>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import PortfolioContext from '../../context/portfolio/portfolioContext';
 
 const ProjectItem = ({ project }) => {
   const { login, avatar_url, bio } = project;
@@ -15,11 +14,7 @@ const ProjectItem = ({ project }) => {
       <h3>{login}</h3>
       <p>{bio}</p>
       <div>
-        <Link
-          to={`/project/${login}`}
-          className='btn btn-dark btn-sm my-1'
-          params={project}
-        >
+        <Link to={`/project/${login}`} className='btn btn-dark btn-sm my-1'>
           more
         </Link>
       </div>
