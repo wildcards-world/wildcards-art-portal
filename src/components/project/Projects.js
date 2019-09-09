@@ -1,41 +1,25 @@
-import React, { useState, useContext } from 'react';
-import ProjectItem from './ProjectItem';
-import PortfolioContext from '../../context/portfolio/portfolioContext';
+import React, { useContext } from "react";
+import ProjectItem from "./ProjectItem";
+import ProjectContext from "../../context/projects/projectContext";
 
 const Projects = () => {
-  const listState = useState({
-    project: [
-      {
-        login: 'lima capital',
-        avatar_url: 'https://avatars3.githubusercontent.com/u/20556729?v=4',
-        id: 1
-      },
-      {
-        login: 'Stackr',
-        avatar_url: 'https://avatars3.githubusercontent.com/u/20556729?v=4',
-        id: 2
-      },
-      {
-        login: 'Wildcards',
-        avatar_url: 'https://avatars3.githubusercontent.com/u/20556729?v=4',
-        id: 3
-      }
-    ]
-  });
+  const projectContext = useContext(ProjectContext);
+
+  const { episodes } = projectContext;
 
   return (
     <div style={userStyle}>
-      {listState.map(project => (
-        <ProjectItem key={project.id} project={project} />
+      {episodes.map(episode => (
+        <ProjectItem key={episode.id} episode={episode} />
       ))}
     </div>
   );
 };
 
 const userStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3,1fr)',
-  gridGap: '1rem'
+  display: "grid",
+  gridTemplateColumns: "repeat(3,1fr)",
+  gridGap: "1rem"
 };
 
 export default Projects;

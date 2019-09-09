@@ -1,40 +1,40 @@
-import React from 'react';
-import Particles from 'react-particles-js';
+import React from "react";
+import Particles from "react-particles-js";
 
 export default () => (
   <div
     style={{
-      position: 'absolute',
+      position: "absolute",
       top: 0,
       left: 0,
-      width: '100%',
-      height: '100%'
+      width: "100%",
+      height: "100%"
     }}
   >
     <Particles
       params={{
         particles: {
           number: {
-            value: 15,
+            value: 5,
             density: {
               enable: true,
               value_area: 800
             }
           },
           color: {
-            value: '#ffffff'
+            value: "#ffffff"
           },
           shape: {
-            type: 'circle',
+            type: "circle",
             stroke: {
               width: 0.3,
-              color: '#000000'
+              color: "#000000"
             },
             polygon: {
               nb_sides: 4
             },
             image: {
-              src: 'img/github.svg',
+              src: "img/github.svg",
               width: 100,
               height: 100
             }
@@ -62,17 +62,17 @@ export default () => (
           line_linked: {
             enable: true,
             distance: 150,
-            color: '#ffffff',
+            color: "#ffffff",
             opacity: 0.4,
             width: 1
           },
           move: {
             enable: true,
             speed: 2,
-            direction: 'none',
+            direction: "none",
             random: false,
             straight: false,
-            out_mode: 'out',
+            out_mode: "out",
             bounce: false,
             attract: {
               enable: false,
@@ -82,15 +82,15 @@ export default () => (
           }
         },
         interactivity: {
-          detect_on: 'window',
+          detect_on: "window",
           events: {
             onhover: {
               enable: true,
-              mode: 'repulse'
+              mode: "repulse"
             },
             onclick: {
               enable: true,
-              mode: 'push'
+              mode: "push"
             },
             resize: true
           },
@@ -113,7 +113,7 @@ export default () => (
               duration: 0.4
             },
             push: {
-              particles_nb: 4
+              particles_nb: 1
             },
             remove: {
               particles_nb: 2

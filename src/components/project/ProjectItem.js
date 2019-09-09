@@ -1,19 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-//import PortfolioContext from '../../context/portfolio/portfolioContext';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const ProjectItem = ({ project: { login, avatar_url } }) => {
+const ProjectItem = ({ episode }) => {
+  const { name, avatar_url, role, list_id } = episode;
   return (
-    <div className='card text-center'>
+    <div className="card text-center">
       <img
         src={avatar_url}
-        alt=''
-        className='round-img'
-        style={{ width: '60px' }}
+        alt=""
+        className="round-img"
+        style={{ width: "90px" }}
       />
-      <h3>{login}</h3>
+      <h2>{name}</h2>
+      <h4>{role}</h4>
       <div>
-        <Link to={`/project/${login}`} className='btn btn-dark btn-sm my-1'>
+        <Link to={`/project/${list_id}`} className="btn btn-dark btn-sm my-1">
           more
         </Link>
       </div>
