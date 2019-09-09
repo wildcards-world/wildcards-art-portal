@@ -11,29 +11,15 @@ const Project = ({ match }) => {
     getEpisode(match.params.list_id);
   }, []);
 
-  const {
-    name,
-    company,
-    avatar_url,
-    location,
-    bio,
-    blog,
-    login,
-    html_url,
-    followers,
-    following,
-    public_repos,
-    public_gists,
-    hireable
-  } = episode;
+  const { name, bio, avatar_url, company_bio, html_url, active } = episode;
 
   return (
     <Fragment>
       <Link to="/" className="btn btn-light">
-        Back To Search
+        Back
       </Link>
-      Hireable:{" "}
-      {hireable ? (
+      Currently working on project:{" "}
+      {active ? (
         <i className="fas fa-check text-success" />
       ) : (
         <i className="fas fa-times-circle text-danger" />
@@ -47,49 +33,21 @@ const Project = ({ match }) => {
             style={{ width: "150px" }}
           />
           <h1>{name}</h1>
-          <p>Location: {location}</p>
+          {company_bio && <p>{company_bio}</p>}
+          {html_url && (
+            <a href={html_url} target="_blank" className="btn btn-dark my-1">
+              {html_url}
+            </a>
+          )}
         </div>
         <div>
           {bio && (
             <Fragment>
-              <h3>Bio</h3>
+              <h2>Description</h2>
               <p>{bio}</p>
             </Fragment>
           )}
-          <a href={html_url} className="btn btn-dark my-1">
-            Visit Github Profile
-          </a>
-          <ul>
-            <li>
-              {login && (
-                <Fragment>
-                  <strong>Username: </strong> {login}
-                </Fragment>
-              )}
-            </li>
-
-            <li>
-              {company && (
-                <Fragment>
-                  <strong>Company: </strong> {company}
-                </Fragment>
-              )}
-            </li>
-            <li>
-              {blog && (
-                <Fragment>
-                  <strong>Website: </strong> {blog}
-                </Fragment>
-              )}
-            </li>
-          </ul>
         </div>
-      </div>
-      <div className="card text-center">
-        <div className="badge badge-primary">Followers: {followers}</div>
-        <div className="badge badge-success">Following: {following}</div>
-        <div className="badge badge-light">Public Repos: {public_repos}</div>
-        <div className="badge badge-dark">Public Gists: {public_gists}</div>
       </div>
     </Fragment>
   );

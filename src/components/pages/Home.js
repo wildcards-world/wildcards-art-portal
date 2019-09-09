@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div className="text-center">
-      <h3>NAvigate to me for now</h3>
+      <h3>Projects keeping me busy</h3>
       <Projects />
     </div>
   );

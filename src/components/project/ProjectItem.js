@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ProjectItem = ({ episode }) => {
-  const { login, avatar_url, bio, list_id } = episode;
+  const { name, avatar_url, role, list_id } = episode;
   return (
     <div className="card text-center">
       <img
@@ -11,8 +11,8 @@ const ProjectItem = ({ episode }) => {
         className="round-img"
         style={{ width: "90px" }}
       />
-      <h3>{login}</h3>
-      <p>{bio}</p>
+      <h2>{name}</h2>
+      <h4>{role}</h4>
       <div>
         <Link to={`/project/${list_id}`} className="btn btn-dark btn-sm my-1">
           more

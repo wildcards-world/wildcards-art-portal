@@ -8,111 +8,71 @@ const ProjectState = props => {
     episodes: [
       {
         list_id: 0,
-        login: "moose-code",
-        id: 20556729,
-        avatar_url: "https://avatars3.githubusercontent.com/u/20556729?v=4",
-        url: "https://api.github.com/users/moose-code",
-        html_url: "https://github.com/moose-code",
-        followers_url: "https://api.github.com/users/moose-code/followers",
-        following_url:
-          "https://api.github.com/users/moose-code/following{/other_user}",
-        gists_url: "https://api.github.com/users/moose-code/gists{/gist_id}",
-        starred_url:
-          "https://api.github.com/users/moose-code/starred{/owner}{/repo}",
-        subscriptions_url:
-          "https://api.github.com/users/moose-code/subscriptions",
-        organizations_url: "https://api.github.com/users/moose-code/orgs",
-        repos_url: "https://api.github.com/users/moose-code/repos",
-        events_url: "https://api.github.com/users/moose-code/events{/privacy}",
-        received_events_url:
-          "https://api.github.com/users/moose-code/received_events",
-        name: "JonJon Clark",
-        company: null,
-        blog: "https://jonjonclark.com",
+        name: "Lima Capital",
+        role: "CTO",
+        avatar_url: "/assets/images/Lima-logo.png",
+        html_url: "https://lima.capital",
         location: "Cape Town",
-        hireable: null,
+        active: true,
+        company_bio: "Machine learning investment management firm",
         bio:
-          "Math, finance, data science, blockchain, chess, these are some of my favourite things.",
-        public_repos: 13,
-        public_gists: 1,
-        followers: 9,
-        following: 14
+          "Management of multiple technical moving parts. Building and maintaing python frameworks used to facilitate exposure to equity indices. Cloud infrfastructure, web development. General strategy and technical writing. "
       },
       {
         list_id: 1,
-        login: "DenhamPreen",
-        id: 26438203,
-        node_id: "MDQ6VXNlcjI2NDM4MjAz",
-        avatar_url: "https://avatars3.githubusercontent.com/u/26438203?v=4",
-        gravatar_id: "",
-        url: "https://api.github.com/users/DenhamPreen",
-        html_url: "https://github.com/DenhamPreen",
-        followers_url: "https://api.github.com/users/DenhamPreen/followers",
-        following_url:
-          "https://api.github.com/users/DenhamPreen/following{/other_user}",
-        gists_url: "https://api.github.com/users/DenhamPreen/gists{/gist_id}",
-        starred_url:
-          "https://api.github.com/users/DenhamPreen/starred{/owner}{/repo}",
-        subscriptions_url:
-          "https://api.github.com/users/DenhamPreen/subscriptions",
-        organizations_url: "https://api.github.com/users/DenhamPreen/orgs",
-        repos_url: "https://api.github.com/users/DenhamPreen/repos",
-        events_url: "https://api.github.com/users/DenhamPreen/events{/privacy}",
-        received_events_url:
-          "https://api.github.com/users/DenhamPreen/received_events",
-        type: "User",
-        site_admin: false,
-        name: "Denham Preen",
-        company: null,
-        blog: "denhampreen.com",
-        location: "Cape Town",
-        email: null,
-        hireable: true,
+        name: "Stackr",
+        role: "Head of Technology",
+        avatar_url: "/assets/images/stackr1.png",
+        html_url: "https://www.gostackr.com",
+        active: true,
+        company_bio: "Global savings solution",
         bio:
-          "Cape Town based developer, full stack developer with a stronger focus on front end. Current interests in blockchain technologies. ",
-        public_repos: 11,
-        public_gists: 1,
-        followers: 8,
-        following: 3,
-        created_at: "2017-03-15T15:00:36Z",
-        updated_at: "2019-08-12T19:28:24Z"
+          "General technological roadmap arcitecture and planning. Built using React + Node.js + GraphQL   "
       },
       {
         list_id: 2,
-        login: "JasoonS",
-        id: 6032276,
-        node_id: "MDQ6VXNlcjYwMzIyNzY=",
-        avatar_url: "https://avatars1.githubusercontent.com/u/6032276?v=4",
-        gravatar_id: "",
-        url: "https://api.github.com/users/JasoonS",
-        html_url: "https://github.com/JasoonS",
-        followers_url: "https://api.github.com/users/JasoonS/followers",
-        following_url:
-          "https://api.github.com/users/JasoonS/following{/other_user}",
-        gists_url: "https://api.github.com/users/JasoonS/gists{/gist_id}",
-        starred_url:
-          "https://api.github.com/users/JasoonS/starred{/owner}{/repo}",
-        subscriptions_url: "https://api.github.com/users/JasoonS/subscriptions",
-        organizations_url: "https://api.github.com/users/JasoonS/orgs",
-        repos_url: "https://api.github.com/users/JasoonS/repos",
-        events_url: "https://api.github.com/users/JasoonS/events{/privacy}",
-        received_events_url:
-          "https://api.github.com/users/JasoonS/received_events",
-        type: "User",
-        site_admin: false,
-        name: "Jason Smythe",
-        company: null,
-        blog: "",
-        location: null,
-        email: null,
-        hireable: null,
-        bio: "Blockchain Engineer from Cape Town",
-        public_repos: 123,
-        public_gists: 8,
-        followers: 34,
-        following: 61,
-        created_at: "2013-11-25T15:35:52Z",
-        updated_at: "2019-08-23T10:15:45Z"
+        name: "Wildcards",
+        role: "Co-founder",
+        avatar_url: "/assets/images/wildcards.png",
+        html_url: "https://wildcards.world",
+        active: true,
+        company_bio: "Always for sale digital conservation tokens",
+        bio:
+          "Actively involved in strategy, full stack development and business development. Wildcards is the first project of its kind combining the incentives of profit, patronage and collectibles to fund the commons."
+      },
+      {
+        list_id: 3,
+        name: "Where it started",
+        role: "Host",
+        avatar_url: "/assets/images/podcast.png",
+        html_url: "https://whereitstarted.io",
+        active: true,
+        company_bio:
+          "Tech foccussed podcast talking to founders and asking where it started...",
+        bio:
+          "Where it started is all about chatting to individuals who are pioneering change. We catch up with founders and ask about their journey is starting their respective projects."
+      },
+      {
+        list_id: 4,
+        name: "Always for sale",
+        role: "Co-founder",
+        avatar_url: "/assets/images/ethindia.png",
+        html_url: "https://alwaysforsale.io",
+        active: true,
+        company_bio: "Always for sale advertising space",
+        bio:
+          "Allows any user to simply intergrate advertising space into their website and recieve income in minutes. "
+      },
+      {
+        list_id: 5,
+        name: "University of Cape Town",
+        role: "Lecturer in Computer Science",
+        avatar_url: "/assets/images/uctlogo.png",
+        //html_url: "https://www.cs.uct.ac.za/",
+        active: true,
+        company_bio: "Lecturer in Computer Science",
+        bio:
+          "Lectured advanced software engineering to 3rd year students. Lectured python to 1st year computer science students. "
       }
     ],
     episode: {}
