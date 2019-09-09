@@ -1,12 +1,19 @@
-import React, { Fragment } from 'react';
-import Projects from '../project/Projects.js';
+import React, { useContext, useEffect } from "react";
+import Projects from "../project/Projects.js";
+import ProjectContext from "../../context/projects/projectContext";
 
-const Home = () => (
-  <Fragment>
-    <h1>Navigate to 'me' to learn more :) </h1>
-    <h2>Work expereience coming here soon...</h2>
-    <Projects />
-  </Fragment>
-);
+const Home = () => {
+  const projectContext = useContext(ProjectContext);
+  const { getEpisodes } = projectContext;
+  useEffect(() => {
+    getEpisodes();
+  }, []);
 
+  return (
+    <div className="text-center">
+      <h3>NAvigate to me for now</h3>
+      <Projects />
+    </div>
+  );
+};
 export default Home;
