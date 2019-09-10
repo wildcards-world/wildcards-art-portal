@@ -18,8 +18,9 @@ const Projects = () => {
 
 const userStyle = {
   display: "grid",
-  gridTemplateColumns: "repeat(3,1fr)",
-  gridGap: "1rem"
+  gridTemplateColumns: "repeat(auto-fill,minmax(250px, 1fr))",
+  gridGap: "1rem",
+  objectFit: "cover"
 };
 
 export default Projects;
