@@ -106,6 +106,17 @@ const ProjectState = props => {
         company_bio: "Early stage venture capital",
         bio:
           "Used my technical blockchain skills to evaluate prospective start ups as well as guide start ups in our portfolio."
+      },
+      {
+        list_id: 8,
+        name: "Shawco",
+        role: "Community teacher",
+        avatar_url: "/assets/images/shawco.jpg",
+        html_url: "https://www.newtownpartners.com",
+        active: null,
+        company_bio: "Foundation educating underprivledged communities in South Africa",
+        bio:
+          "Every monday afternoon for a year I would take bus to a local South African township (Khayelitsha), and teach a grade 7 maths class."
       }
     ],
     episode: {}
