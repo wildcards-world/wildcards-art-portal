@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 /* Global Styles */
 :root {
@@ -7,6 +7,10 @@
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
+}
+
+body {
+  font-family: "Roboto", monospace;
 }
 
 /* particles-js {
@@ -23,7 +27,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -325,10 +329,10 @@ input {
   color: #888;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='password'],
-input[type='date'],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
 select,
 textarea {
   display: block;
@@ -338,7 +342,7 @@ textarea {
   border: 1px solid #ccc;
 }
 
-input[type='submit'],
+input[type="submit"],
 button {
   font: inherit;
 }
@@ -418,4 +422,89 @@ table th {
     text-align: center;
     justify-content: center;
   }
+}
+
+.contactForm {
+  width: 80vw;
+  display: block;
+  margin: 1vh 10vw;
+  overflow-y: hidden;
+}
+
+.contactForm p {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  /*
+  margin-block-start: 0;
+  margin-block-end: 0;
+  */
+}
+
+.contactForm {
+  width: 40%;
+  position: fixed;
+  left: 20%;
+  margin-left: 10%;
+}
+
+.feedback-form input,
+textarea {
+  position: relative;
+  display: block;
+  font-family: "Inconsolata", monospace;
+  width: 68vw;
+  padding: 3vh 6vw;
+  margin: 6px 0;
+  color: white;
+  background: rgba(10, 20, 100, 0.3);
+  border: none;
+  border-bottom: 1px solid rgba(49, 98, 122, 1);
+}
+
+.feedback-form textarea {
+  height: 5rem;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+#sendEmail {
+  color: ghostwhite;
+  font-family: "Inconsolata", monospace;
+  width: 10rem;
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: none;
+  background-image: var(--primary-color);
+  /*	padding:1.1rem;*/
+}
+
+#sendEmail:hover {
+  background-image: radial-gradient(
+    circle 931px at 7.5% 99.5%,
+    rgba(25, 161, 185, 0.39) 0%,
+    rgba(42, 175, 195, 0.555) 60.7%,
+    rgba(49, 98, 122, 0.301) 100.2%
+  );
+}
+
+.text-input {
+  color: var(--primary-color);
+  background-image: var(--primary-color);
 }
