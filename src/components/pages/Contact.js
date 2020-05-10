@@ -7,8 +7,14 @@ const Contact = () => {
       <Link to="/" className="btn btn-light">
         Back
       </Link>
-      <p>Email: jonjonclark@gmail.com </p>
-      <p>Cell: +27 76 312 6356</p>
+      <br />
+      <h4>
+        For more information or queries regarding the program please reach out
+        to details listed below and we will get be in contact ASAP.
+      </h4>
+      <br />
+      <p>Email: jonjon@wildcards.world </p>
+      <p>Telegram: https://t.me/wildcardsworld</p>
     </Fragment>
   );
 };

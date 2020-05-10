@@ -18,7 +18,7 @@ const Project = ({ match }) => {
       <Link to="/" className="btn btn-light">
         Back
       </Link>
-      Currently working on project:{" "}
+      Artwrok completed?{" "}
       {active ? (
         <i className="fas fa-check text-success" />
       ) : (

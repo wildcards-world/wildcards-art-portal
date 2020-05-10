@@ -3,124 +3,54 @@ import ProjectContext from "./projectContext";
 import ProjectReducer from "./projectReducer";
 import { GET_EPISODES, GET_EPISODE } from "../types";
 
-const ProjectState = props => {
+const ProjectState = (props) => {
   const initialState = {
     episodes: [
       {
         list_id: 0,
-        name: "Lima Capital",
-        role: "CTO",
-        avatar_url: "/assets/images/Lima-logo.png",
-        html_url: "https://lima.capital",
-        location: "Cape Town",
+        name: "Gorilla",
+        role: "Vitalik",
+        avatar_url: "/assets/images/wildcards.png",
+        html_url: "https://wildcards.world/#ethturin-quadratic-voting",
         active: true,
-        company_bio: "Machine learning investment management firm",
+        company_bio: "Vitalik",
         bio:
-          "Management of multiple technical moving parts. Building and maintaining python frameworks used to facilitate exposure to equity indices. Cloud infrfastructure, web development. General strategy and technical writing. "
+          "Original Gorilla. Vitalik is the first ever animal launched on wildcards and therefore often termed an OG (Original Gorilla). The wildcards project was born at the #ETHCapeTown hackathon in May 2019 where Vitalik Buterin was one of the judges. We named Vitalik the Gorilla after Vitalik as a testament to the impact and innovation Vitalik Buterin has had on the blockchain ecosystem. Vitalik, if you are reading this, start saving some animals and buy me! Funds raised by Vitalik, initially, will go to Wild Tomorrow Fund; however Vitalik doesn't represent a real gorilla, and funds for Vitalik may be distributed via another allocation mechanism in the future (DAO or otherwise).",
       },
       {
         list_id: 1,
-        name: "Stackr",
-        role: "Head of Technology",
-        avatar_url: "/assets/images/stackr1.png",
-        html_url: "https://www.gostackr.com",
-        active: true,
-        company_bio: "Global savings solution",
+        name: "Whale",
+        role: "Griff",
+        avatar_url: "/assets/images/comingsoon.png",
+        html_url: "https://www.greatwhaleconservancy.org/",
+        active: false,
+        company_bio: "Griff",
         bio:
-          "General technological roadmap arcitecture and planning. Built using React + Node.js + GraphQL   "
+          "This whale will represent the great whale conservacy and raise funds for this organisation. Please visit their website for more details.",
       },
       {
         list_id: 2,
-        name: "Wildcards",
-        role: "Co-founder",
-        avatar_url: "/assets/images/wildcards.png",
-        html_url: "https://wildcards.world",
-        active: true,
-        company_bio: "Always for sale digital conservation tokens",
+        name: "Pangolin",
+        role: "Sarah",
+        avatar_url: "/assets/images/comingsoon.png",
+        html_url: "https://pangolin.africa",
+        active: false,
+        company_bio: "Sarah",
         bio:
-          "Actively involved in strategy, full stack development and business development. Wildcards is the first project of its kind combining the incentives of profit, patronage and collectibles to fund the commons."
+          "Pangolin.Africa stops the trafficking of this extremely endangered animal. Visit their website for more details.",
       },
       {
         list_id: 3,
-        name: "Where it started",
-        role: "Host",
-        avatar_url: "/assets/images/podcast.png",
-        html_url: "https://whereitstarted.io",
+        name: "Pangolin",
+        role: "Jeff",
+        avatar_url: "/assets/images/comingsoon.png",
+        html_url: "https://pangolin.africa",
         active: true,
-        company_bio:
-          "Tech foccussed podcast talking to founders and asking where it started...",
-        bio:
-          "Where it started is all about chatting to individuals who are pioneering change. We catch up with founders and ask about their journey is starting their respective projects."
+        company_bio: "Jeff",
+        bio: "My name jefff.",
       },
-      {
-        list_id: 4,
-        name: "Always for sale",
-        role: "Co-founder",
-        avatar_url: "/assets/images/ethindia.png",
-        html_url: "https://alwaysforsale.io",
-        active: true,
-        company_bio: "Always for sale advertising space",
-        bio:
-          "Allows any user to simply intergrate advertising space into their website and recieve income in minutes. "
-      },
-      {
-        list_id: 5,
-        name: "University of Cape Town",
-        role: "Lecturer in Computer Science",
-        avatar_url: "/assets/images/uctlogo.png",
-        //html_url: "https://www.cs.uct.ac.za/",
-        active: true,
-        company_bio: "Lecturer in Computer Science",
-        bio:
-          "Lectured advanced software engineering to 3rd year students. Lectured python to 1st year computer science students. "
-      },
-      {
-        list_id: 6,
-        name: "WorldQuant University",
-        role: "Lecturer & Content creator",
-        avatar_url: "/assets/images/wqu.png",
-        html_url: "https://wqu.org",
-        active: null,
-        company_bio: "Offering a Msc in Financial Engineering",
-        bio:
-          "Author and lecturer of the data feeds and technology component of the Msc financial engineering course. Specifially put together an data science module focussed on using unsupervised learning to cluster countries based on data from the UN. The project was created using R and deployed live online using Shiny. Created the blockchain content which in technical detail explained how blockchains function before delving into coding smart contracts using solidity."
-      },
-      {
-        list_id: 7,
-        name: "Data Prophet",
-        role: "Data science consultancy",
-        avatar_url: "/assets/images/dp.png",
-        html_url: "https://dataprophet.com",
-        active: null,
-        company_bio: "Boutique aritificial intelligence solutions",
-        bio:
-          "Worked for a client on a data science project that involved pipeling through large amounts of data in real time. Used Python, AWS services (SQS) and Kafka."
-      },
-      {
-        list_id: 8,
-        name: "Newtown Partners",
-        role: "Blockchain analyst",
-        avatar_url: "/assets/images/np.jpg",
-        html_url: "https://www.newtownpartners.com",
-        active: null,
-        company_bio: "Early stage venture capital",
-        bio:
-          "Used my technical blockchain skills to evaluate prospective start ups as well as guide start ups in our portfolio."
-      },
-      {
-        list_id: 9,
-        name: "Shawco",
-        role: "Community teacher",
-        avatar_url: "/assets/images/shawco.jpg",
-        html_url: "https://shawco.org",
-        active: null,
-        company_bio:
-          "Foundation educating underprivledged communities in South Africa",
-        bio:
-          "Every monday afternoon for a year I would take bus to a local South African township (Khayelitsha), and teach a grade 7 maths class."
-      }
     ],
-    episode: {}
+    episode: {},
   };
 
   const [state, dispatch] = useReducer(ProjectReducer, initialState);
@@ -128,14 +58,14 @@ const ProjectState = props => {
   const getEpisodes = () => {
     dispatch({
       type: GET_EPISODES,
-      payload: state.episodes
+      payload: state.episodes,
     });
   };
 
-  const getEpisode = async list_id => {
+  const getEpisode = async (list_id) => {
     dispatch({
       type: GET_EPISODE,
-      payload: state.episodes[list_id]
+      payload: state.episodes[list_id],
     });
   };
 
@@ -145,7 +75,7 @@ const ProjectState = props => {
         episodes: state.episodes,
         episode: state.episode,
         getEpisodes,
-        getEpisode
+        getEpisode,
       }}
     >
       {props.children}
